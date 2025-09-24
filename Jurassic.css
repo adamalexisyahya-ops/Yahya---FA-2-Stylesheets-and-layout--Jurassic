@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(to bottom, #26671f, #1b3520 70%, #090f0a);
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjI0bnc0ZHpvZW8wazBna255ZHcxZWxmOTBmdzUyeG9maXhwY2plZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iVqXV4vE4DDYk/giphy.gif);
+    background-color: #2a5d34;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.flex-container {
+    display: flex;
+    padding: 20px;
+    background: #e8f5e9;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.flex-container > div {
+    flex-grow: 1;
+    background: white;
+    color: #2a5d34;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.flex-container > div:hover {
+    transform: scale(1.05);
+}
+
+.float-section {
+    padding: 20px;
+    overflow: auto;
+    background-color: #2e3b2e;   /* darker jungle green background */
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.float-section .img {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.float-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0; /* light text for readability */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #faf5e6;   /* light beige, fossil-paper feel */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 15px;
+    margin-top: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #2a5d34;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
